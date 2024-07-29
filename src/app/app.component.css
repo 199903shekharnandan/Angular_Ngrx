@@ -1,0 +1,12 @@
+/* styles.css or component-specific styles */
+h2 {
+  color: darkgreen;
+}
+
+.text-darkgreen {
+  color: white;
+  font-size: medium;
+  width: 350px;
+  padding: 20px;
+  background: green;
+}

@@ -1,0 +1,55 @@
+<!-- <app-counter-output></app-counter-output>
+<app-counter-button></app-counter-button> -->
+
+<!-- <div>
+  <h2>{{ title }}</h2>
+  <button (click)="showTitle1()">Show Title in Console</button>
+</div> -->
+
+<!-- <div>
+  <h2>Counter: {{ count() }}</h2>
+  <button (click)="increment()">Increment</button>
+</div> -->
+
+<form [formGroup]="form">
+  <div *ngFor="let name of names">
+    <mat-checkbox #checkboxes (change)="toggleCheckbox(name, $event)">
+      {{ name }}
+    </mat-checkbox>
+    <br>
+  </div>
+  <button mat-raised-button color="primary" type="button" (click)="submit()">Submit</button>
+</form>
+
+<!-- RADIO BUTTON -->
+<mat-radio-group>
+  <mat-radio-button class="example-radio-button" (change)="select(season)" *ngFor="let season of name" [value]="name">
+    {{season}}
+  </mat-radio-button>
+</mat-radio-group>
+<input type="radio" name="A" (change)="select1($event)" value="A">A
+<input type="radio" name="A" (change)="select1($event)" value="B">B
+
+<input type="text" class="form-control" [ngClass]="this.selectedName ?'readonly':''">
+<div *ngIf="selectedName==='A' || selectedName === 'DIV-A'">
+  <h1>this is jhon</h1>
+</div>
+<div *ngIf="selectedName==='B' || selectedName==='DIV-B'">
+  <h1>this is jane</h1>
+</div>
+<!-- RADIO BUTTON -->
+<h3>Selected Checkboxes</h3>
+<table mat-table>
+  <thead>
+    <tr>
+      <th>Checkbox</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngIf="selectedNames.length > 0">
+      <td>{{ selectedNames }}</td>
+      <td><button (click)="edit()">Edit</button></td>
+    </tr>
+  </tbody>
+</table>

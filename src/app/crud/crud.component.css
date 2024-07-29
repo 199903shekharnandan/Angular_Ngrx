@@ -1,0 +1,166 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Ensure the form takes full width and centers content */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Form group styling */
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Label and input styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+}
+
+.form-groups {
+  display: grid;
+  left: auto;
+}
+
+
+
+button[type="EDIT"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="EDIT"]:hover {
+  background-color: #0056b3;
+}
+
+button[type="EDIT"]:hover {
+  background-color: #0056b3;
+}
+
+button[type="Delete"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f40707;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="Delete"]:hover {
+  background-color: #f40707;
+}
+
+button[type="Delete"]:hover {
+  background-color: #f40707;
+}
+
+/* styles.css or component-specific CSS */
+.custom-swal-popup {
+  display: grid;
+  position: fixed;
+  left: auto;
+  top: initial;
+  border: tan;
+  visibility: visible;
+  width: 90%;
+  /* Adjust as needed */
+  max-width: 600px;
+  /* Adjust as needed */
+  margin: 0 auto;
+  /* Center the popup horizontally */
+}
+
+.custom-swal-popup .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.custom-swal-popup .form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .custom-swal-popup .form-group {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .custom-swal-popup .form-group input {
+    width: calc(100% - 20px);
+    /* Adjust width based on padding and margin */
+  }
+}
